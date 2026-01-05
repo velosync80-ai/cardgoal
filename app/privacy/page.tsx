@@ -172,7 +172,7 @@ export default function PrivacyPage() {
             <li>File a complaint with the Nigeria Data Protection Commission</li>
           </ul>
           <p className="text-[#222423] leading-relaxed mb-4">
-            To exercise your rights, email us at <Link href={"service@cardgoal.com"} className='text-blue-600'>service@cardgoal.com</Link>, we will respond to verified requests within 30 days.
+            To exercise your rights, email us at <Link href="mailto:service@cardgoal.com" className='text-blue-600'>service@cardgoal.com</Link>, we will respond to verified requests within 30 days.
           </p>
         </section>
 
@@ -204,7 +204,7 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc list-inside space-y-2 text-[#222423]">
             <li>If you have questions, concerns, or requests regarding this Privacy Policy, please contact us at:</li>
-            <li>Email: <Link href={"service@cardgoal.com"} className='text-blue-600'>service@cardgoal.com</Link></li>
+            <li>Email: <Link href="mailto:service@cardgoal.com" className='text-blue-600'>service@cardgoal.com</Link></li>
             <li>Website: <Link href={"https://cardgoal.com"} className='text-blue-600'>https://cardgoal.com</Link></li>
           </ul>
         </section>

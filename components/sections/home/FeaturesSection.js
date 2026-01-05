@@ -1,12 +1,13 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function FeaturesSection() {
   return (
     <section className="">
 
       <div className="mx-auto space-y-12" >
-        <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-900 mb-2">Explore What Cardgoal offers</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center theme-dark-text mb-2">Explore What Cardgoal offers</h2>
         <div className="mx-auto space-y-12">
 
           <div
@@ -19,13 +20,14 @@ export default function FeaturesSection() {
                 Gift Card Trading
               </h2>
 
-              <p className="text-white text-lg md:text-xl font-semibold mb-8 leading-relaxed">
+              <p className="text-white text-lg md:text-xl font-normal mb-8 leading-relaxed">
                 Sell your unused gift cards for instant cash at the best rates.
               </p>
-
-              <button className="bg-green-500 hover:bg-blue-800 text-white px-8 py-3 rounded font-semibold transition-all shadow-lg">
+              <Link
+                href="https://app.cardgoal.com/?name=/sell&id=102"
+                className="bg-green-500 text-white px-8 py-3 rounded font-semibold transition-all shadow-lg" >
                 Learn more
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -35,7 +37,7 @@ export default function FeaturesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative bg-[#f9fafb] rounded-2xl p-8 py-20 transition-all overflow-hidden">
-             <h2 className="text-3xl md:text-3xl font-bold text-center text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-3xl font-bold text-center text-gray-900 mb-4">
               Airtime & Data
             </h2>
 
@@ -61,8 +63,8 @@ export default function FeaturesSection() {
             />
 
           </div>
-           <div className="relative bg-[#f9fafb] rounded-2xl p-8 py-20 transition-all overflow-hidden">
-             <h2 className="text-3xl md:text-3xl font-bold text-center text-gray-900 mb-4">
+          <div className="relative bg-[#f9fafb] rounded-2xl p-8 py-20 transition-all overflow-hidden">
+            <h2 className="text-3xl md:text-3xl font-bold text-center text-gray-900 mb-4">
               Bill Payments
             </h2>
 

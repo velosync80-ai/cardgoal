@@ -4,12 +4,13 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import logo from "../../../public/images/logo.png";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 export default function Navbar() {
   const pathname = usePathname();
 
   const linkClass = (path) =>
-    `font-semibold transition-colors ${pathname === path
+    `font-medium transition-colors ${pathname === path
       ? "text-green-500"
       : "text-gray-900 hover:text-green-400"
     }`;
@@ -39,10 +40,14 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-20">
             <Link href="/" className={linkClass("/")}>Home</Link>
             <Link href="/gift-cards" className={linkClass("/gift-cards")}>Gift Cards</Link>
-            <Link href="/blog" className={linkClass("/blog")}>Blog</Link>
+            <Link href="http://localhost:3001" className={linkClass("/blog")}>Blog</Link>
           </div>
 
-          <Link href="https://app.cardgoal.com/?name=/sell&id=102" className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded font-semibold transition-colors whitespace-nowrap">
+          <Link 
+            href="https://app.cardgoal.com/?name=/sell&id=102" 
+            className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded font-semibold transition-colors whitespace-nowrap"
+            onClick={() => trackEvent('click_get_app_header', 'CTA Click', 'Homepage - Header')}
+          >
             Get the App
           </Link>
 

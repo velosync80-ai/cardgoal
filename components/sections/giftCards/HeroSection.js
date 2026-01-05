@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 export default function HeroSection() {
   return (
@@ -24,9 +25,10 @@ export default function HeroSection() {
             </p>
             <Link
               href="#"
-              className="bg-[#242344] text-xl md:text-xl text-white px-4 py-2 rounded Lexend-Medium inline-block transition-colors"
+              className="theme-dark-bg text-xl md:text-xl text-white px-4 py-2 rounded Lexend-Medium inline-block transition-colors"
+              onClick={() => trackEvent('click_sell_giftcard_banner', 'CTA Click', 'Sell Gift Card - Banner')}
             >
-              Download App
+              Sell a Gift Card
             </Link>
           </div>
           <div className="hidden lg:block">

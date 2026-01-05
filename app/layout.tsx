@@ -1,6 +1,7 @@
 import './globals.css'
 import { ReactNode } from 'react'
 import Script from 'next/script'
+import AnalyticsTracker from '@/components/AnalyticsTracker'
 
 export const metadata = {
   title: 'Cardgoal - Get best value for your gift cards',
@@ -22,9 +23,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" className="scroll-smooth">
       <body className="antialiased">
         {children}
+        <AnalyticsTracker />
 
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-EDDPQBE3QJ"
           strategy="afterInteractive"
         />
         <Script id="ga4-init" strategy="afterInteractive">
@@ -32,7 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXX', {
+            gtag('config', 'G-EDDPQBE3QJ', {
               page_path: window.location.pathname,
             });
           `}

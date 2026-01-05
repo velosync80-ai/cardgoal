@@ -333,7 +333,7 @@ export default function TermsPage() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold text-[#222423] mb-3">14.1 Primary Contact</h3>
             <p className="text-[#222423] leading-relaxed">
-              Please first contact our in-App support or email <Link href={"service@cardgoal.com"} className='text-blue-600'>service@cardgoal.com</Link>.
+              Please first contact our in-App support or email <Link href="mailto:service@cardgoal.com" className='text-blue-600'>service@cardgoal.com</Link>.
             </p>
           </div>
           <div className="mb-6">
@@ -402,7 +402,7 @@ export default function TermsPage() {
           </p>
           <ul className="list-disc list-inside space-y-2 text-[#222423]">
             <li>You must be 18 years or older (or the age of majority in your jurisdiction, if higher).</li>
-            <li>Email: <Link href={"service@cardgoal.com"} className='text-blue-600'>service@cardgoal.com</Link></li>
+            <li>Email: <Link href="mailto:service@cardgoal.com" className='text-blue-600'>service@cardgoal.com</Link></li>
             <li>Website: <Link href={"https://cardgoal.com"} className='text-blue-600'>https://cardgoal.com</Link></li>
           </ul>
         </section>

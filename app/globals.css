@@ -4,7 +4,22 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700,500&display=swap');
 
-/* Global styles */
+@font-face {
+  font-family: 'LexendRegular';
+  src: url('/fonts/Lexend-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LexendBold';
+  src: url('/fonts/Lexend-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,12 +28,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'LexendRegular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Auto-scroll container for reviews */
 .reviews-scroll-container {
   overflow-x: auto;
   overflow-y: hidden;
@@ -39,12 +53,12 @@ body {
 }
 
 .lexend-bold , h1, h2{
-  font-family: 'Lexend', sans-serif;
+  font-family: 'LexendRegular', sans-serif;
   font-weight: 700;
 }
 
 .Lexend-Medium {
-  font-family: 'Lexend', sans-serif;
+  font-family: 'LexendRegular', sans-serif;
   font-weight: 500;
 }
 
@@ -54,4 +68,12 @@ body {
 }
 .scrollbar-hide {
   scrollbar-width: none;
+}
+
+.theme-dark-bg {
+  background-color: #242344;
+}
+
+.theme-dark-text {
+  color: #242344;
 }

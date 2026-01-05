@@ -65,8 +65,8 @@ export default function ReviewsSection() {
         />
       ),
       username: 'Eddy58586',
-      date: 'Jul 4,2025',
-      text: "This is the best and trusted trading app… I have been trading with them since 2 years now, I have never experienced any issues with them… Trade your gift card with Cardgoal"
+      date: 'Jul 2025',
+      text: "This is the best and trusted trading app… I have been trading with them for 2 years now, I have never experienced any issues with them… Trade your gift card with Cardgoal..."
     },
     {
       platform: 'App Store',
@@ -77,7 +77,7 @@ export default function ReviewsSection() {
       ),
       username: 'Oghattrick',
       date: 'Apr 11,2025',
-      text: "I love trading on this platform… it’s the best, fastest and safest platform to trade on gift cards…"
+      text: "I love trading on this platform… it’s the best, fastest, and safest platform for trading gift cards…"
     },
     {
       platform: 'App Store',
@@ -88,7 +88,7 @@ export default function ReviewsSection() {
       ),
       username: 'Coba Immanuel',
       date: 'Dec 9,2025',
-      text: "Very fast to trade and more faster to withdraw. With a very good rate. I recommend."
+      text: "Very fast to trade and faster to withdraw. With a very good rate. I recommend."
     },
     {
       platform: 'App Store',
@@ -99,7 +99,7 @@ export default function ReviewsSection() {
       ),
       username: 'Gentisoul',
       date: 'Nov 29,2025',
-      text: "They're always available to assist on any issues and they're reliable. Great customer support."
+      text: "They're always available to assist with any issues and they are reliable. Great customer support."
     }
   ]
 
@@ -116,12 +116,12 @@ export default function ReviewsSection() {
   return (
     <section className="py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 text-center mb-10">
+        <h2 className="text-3xl md:text-5xl font-bold theme-dark-text text-center mb-10">
           Reviews
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <div className="bg-gray-800 rounded-lg p-6">
+          <div className="theme-dark-bg rounded-lg p-6">
             <div className="flex items-center gap-3 mb-4">
               <div className="text-white">
                 <Image
@@ -134,7 +134,7 @@ export default function ReviewsSection() {
               </div>
               <span className="text-white font-semibold text-lg">Google Play</span>
             </div>
-            <div className="text-5xl font-semibold text-white mb-3">4.5</div>
+            <div className="text-5xl font-normal text-white mb-3">4.5</div>
             <div className="flex gap-1">
               {[1, 2, 3, 4, 5].map((star) => (
                 <StarIcon key={star} filled={star <= 5} />
@@ -142,7 +142,7 @@ export default function ReviewsSection() {
             </div>
           </div>
 
-          <div className="bg-gray-800 rounded-lg p-6">
+          <div className="theme-dark-bg rounded-lg p-6">
             <div className="flex items-center gap-3 mb-4">
               <div className="text-white">
                 <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
@@ -151,7 +151,7 @@ export default function ReviewsSection() {
               </div>
               <span className="text-white font-semibold text-lg">App Store</span>
             </div>
-            <div className="text-5xl font-semibold text-white mb-3">4.5</div>
+            <div className="text-5xl font-normal text-white mb-3">4.5</div>
             <div className="flex gap-1">
               {[1, 2, 3, 4, 5].map((star) => (
                 <StarIcon key={star} filled={star <= 5} />

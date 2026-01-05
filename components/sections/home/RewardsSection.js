@@ -30,7 +30,7 @@ export default function RewardsSection() {
       style={{ backgroundImage: "url('/images/bg3.png')" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 text-center mb-10">
+        <h2 className="text-3xl md:text-5xl font-bold theme-dark-text text-center mb-10">
           Rewards That Keep Coming
         </h2>
 
@@ -52,11 +52,11 @@ export default function RewardsSection() {
               </div>
 
 
-              <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">
+              <h3 className="text-2xl font-bold theme-dark-text text-center mb-4">
                 {reward.title}
               </h3>
 
-              <p className="text-gray-600 text-center leading-relaxed">
+              <p className="theme-dark-text text-center leading-relaxed">
                 {reward.description}
               </p>
             </div>

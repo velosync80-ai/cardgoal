@@ -11,10 +11,10 @@ export default function VideoSection() {
   return (
     <section className="py-20 pb-10 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-5xl font-bold theme-dark-text mb-4">
           Cardgoal Charity
         </h2>
-        <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-24xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-600 my-12 max-w-24xl mx-auto">
           Cardgoal Charity is built on the belief that growth should benefit both people and communities. Gift Health is Cardgoal's first initiative, created to support children battling malnutrition through structured nutrition and care.
         </p>
       </div>

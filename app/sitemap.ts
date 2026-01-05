@@ -1,26 +1,32 @@
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://cardgoal.com'
+  
   return [
     {
-      url: 'https://cardgoal.com/',
+      url: baseUrl,
       lastModified: new Date(),
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://cardgoal.com/gift-cards',
+      url: `${baseUrl}/gift-cards`,
       lastModified: new Date(),
+      changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: 'https://cardgoal.com/terms',
+      url: `${baseUrl}/terms`,
       lastModified: new Date(),
-      priority: 0.9,
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
     {
-      url: 'https://cardgoal.com/privacy',
+      url: `${baseUrl}/privacy`,
       lastModified: new Date(),
-      priority: 0.9,
-    },
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    }
   ]
 }

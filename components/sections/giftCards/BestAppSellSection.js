@@ -12,8 +12,8 @@ export default function BestAppSellSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="">
-            <h2 className="text-3xl md:text-4xl Lexend-Medium text-gray-900 mb-12">
-              Why Cardgoal is the Best App Sell Gift Cards in Nigeria?
+            <h2 className="text-3xl md:text-4xl Lexend-Medium theme-dark-text mb-12">
+              Why is Cardgoal the Best App for Selling Gift Cards in Nigeria?
             </h2>
           </div>
 
@@ -31,7 +31,7 @@ export default function BestAppSellSection() {
                     unoptimized
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Top Rates Guaranteed</h3>
+                <h3 className="text-xl font-bold theme-dark-text mb-3">Top Rates Guaranteed</h3>
                 <p className="text-gray-500">
                   Cardgoal constantly updates gift card rates in real-time to ensure you always get the best value while trading.
                 </p>
@@ -48,7 +48,7 @@ export default function BestAppSellSection() {
                     unoptimized
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Transactions in Under 60 Secs</h3>
+                <h3 className="text-xl font-bold theme-dark-text mb-3">Transactions in Under 60 Secs</h3>
                 <p className="text-gray-500">
                   Every gift card trade is processed quickly and safely, with payments credited instantly to your Cardgoal account.
                 </p>
@@ -65,7 +65,7 @@ export default function BestAppSellSection() {
                     unoptimized
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Earn More with Each Transaction</h3>
+                <h3 className="text-xl font-bold theme-dark-text mb-3">Earn More with Each Transaction</h3>
                 <p className="text-gray-500">
                   Beyond cash, Cardgoal offers exclusive rewards like Daily Rewards, Trade Rewards, and Refer & Earn opportunities.
                 </p>
@@ -82,7 +82,7 @@ export default function BestAppSellSection() {
                     unoptimized
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">User-Friendly Experience</h3>
+                <h3 className="text-xl font-bold theme-dark-text mb-3">User-Friendly Experience</h3>
                 <p className="text-gray-500">
                   The app is designed for simplicity, allowing you to sell gift cards online with just a few taps, whether on Android or iOS.
                 </p>

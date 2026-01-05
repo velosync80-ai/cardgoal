@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 export default function ThreeEasyStepsSection() {
   const steps = [
@@ -18,17 +19,17 @@ export default function ThreeEasyStepsSection() {
     {
       img: '/images/step3.png',
       title: 'Cash Out Instantly',
-      desc: 'Once your trade is confirmed, the payment is credited to your Cardgoal account immediately.'
+      desc: 'Once your trade is confirmed, the payment is credited to your Cardgoal account faster than ever.'
     }
   ]
 
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 pt-5 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-4xl font-bold text-gray-900 text-center mb-3">
+        <h2 className="text-4xl md:text-4xl font-bold theme-dark-text text-center mb-3">
           Sell Gift Cards in 3 Easy Steps
         </h2>
-        <p className="text-lg text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+        <p className="text-lg theme-dark-text text-center mb-16 max-w-3xl mx-auto">
           The new Cardgoal app offers a simplified gift card trading process.
           Here’s how to sell gift cards online using Cardgoal.
         </p>
@@ -56,8 +57,8 @@ export default function ThreeEasyStepsSection() {
               </div>
 
               <div className="flex flex-col gap-2 items-start">
-                <h3 className="text-lg md:text-xl font-bold text-gray-900">{step.title}</h3>
-                <p className="text-gray-600 text-sm md:text-base">{step.desc}</p>
+                <h3 className="text-lg md:text-xl font-bold theme-dark-text">{step.title}</h3>
+                <p className="text-gray-500 text-sm md:text-base font-medium">{step.desc}</p>
               </div>
 
             </div>
@@ -67,7 +68,8 @@ export default function ThreeEasyStepsSection() {
         <div className="text-center mt-16">
           <Link
             href="#"
-            className="bg-[#242344] hover:bg-gray-800 text-white px-8 py-3 rounded font-semibold inline-block transition-colors"
+            className="theme-dark-bg hover:bg-gray-800 text-white px-8 py-3 rounded font-semibold inline-block transition-colors"
+            onClick={() => trackEvent('click_start_trading_how_it_works', 'CTA Click', 'Sell Gift Card - How It Works')}
           >
             Start Trading
           </Link>
