@@ -21,7 +21,7 @@ export default function Footer() {
                 unoptimized
               />
             </div>
-            <p className="text-gray-600 text-base font-medium mb-6">
+            <p className="text-gray-900 text-base font-medium mb-6">
               An All-in-one Platform For Gift Cards & Bill Payments
             </p>
 
@@ -50,9 +50,9 @@ export default function Footer() {
           <div>
             <h3 className="text-gray-900 font-bold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><Link href="#" className="text-gray-500 hover:text-gray-900 transition-colors">About Us</Link></li>
-              <li><Link href="/terms" className="text-gray-500 hover:text-gray-900 transition-colors">Terms & Conditions</Link></li>
-              <li><Link href="/privacy" className="text-gray-500 hover:text-gray-900 transition-colors">Privacy Policy</Link></li>
+              <li><Link href="#" className="text-gray-500 hover:text-gray-900 hover:underline transition-colors">About Us</Link></li>
+              <li><Link href="/terms" className="text-gray-500 hover:text-gray-500 hover:underline transition-colors">Terms & Conditions</Link></li>
+              <li><Link href="/privacy" className="text-gray-500 hover:text-gray-500 hover:underline transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
 
@@ -60,16 +60,16 @@ export default function Footer() {
             <h3 className="text-gray-900 font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <Link href="/gift-cards" className="text-gray-500 hover:text-gray-900 transition-colors">Sell Gift Cards</Link>
-              <li><a href="#" className="text-gray-500 hover:text-gray-900 transition-colors"></a></li>
-              <li><a href="#" className="text-gray-500 hover:text-gray-900 transition-colors">Airtime</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-gray-900 transition-colors">Data</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-gray-900 transition-colors">Bill Payments</a></li>
+              <li><a href="#" className="text-gray-500 hover:text-gray-500 hover:underline transition-colors"></a></li>
+              <li><a href="#" className="text-gray-500 hover:text-gray-500 hover:underline transition-colors">Airtime</a></li>
+              <li><a href="#" className="text-gray-500 hover:text-gray-500 hover:underline transition-colors">Data</a></li>
+              <li><a href="#" className="text-gray-500 hover:text-gray-500 hover:underline transition-colors">Bill Payments</a></li>
             </ul>
           </div>
           <div>
             <h3 className="text-gray-900 font-bold mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><Link href="http://localhost:3001/" className="text-gray-500 hover:text-gray-900 transition-colors">Blog</Link></li>
+              <li><Link href="http://localhost:3001/" className="text-gray-500 hover:underline hover:text-gray-900 transition-colors">Blog</Link></li>
             </ul>
           </div>
 
@@ -80,7 +80,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="mailto:service@cardgoal.com"
-                  className="text-gray-500 hover:text-gray-900 transition-colors"
+                  className="text-gray-500 hover:text-gray-500 hover:underline transition-colors"
                 >
                   Email:&nbsp;&nbsp;service@cardgoal.com
                 </Link>

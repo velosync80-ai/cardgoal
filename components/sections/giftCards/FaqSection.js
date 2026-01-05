@@ -50,9 +50,9 @@ export default function FaqSection() {
               <Image
                 src="/images/cat3.png"  
                 alt="Icon"
-                width={80}
+                width={90}
                 height={80}
-                className="object-contain hidden sm:block object-contai"
+                className="object-contain hidden sm:block object-contain"
                 unoptimized
               />
             </div>

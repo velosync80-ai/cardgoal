@@ -26,7 +26,7 @@ export default function RewardsSection() {
 
   return (
     <section
-      className="py-20 pb-5 bg-cover bg-center bg-no-repeat"
+      className="py-20 pb-5 pt-12 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/images/bg3.png')" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

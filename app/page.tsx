@@ -5,6 +5,7 @@ import FeaturesSection from '@/components/sections/home/FeaturesSection'
 import VideoSection from '@/components/sections/home/VideoSection'
 import RewardsSection from '@/components/sections/home/RewardsSection'
 import ReviewsSection from '@/components/sections/home/ReviewsSection'
+import FeaturedOn from '@/components/sections/home/FeaturedOn'
 import DownloadSection from '@/components/sections/home/DownloadSection'
 import Footer from '@/components/sections/home/Footer'
 import { Metadata } from 'next'
@@ -21,6 +22,7 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <FeaturesSection />
+      <FeaturedOn />
       <RewardsSection />
       <VideoSection />
       <ReviewsSection />

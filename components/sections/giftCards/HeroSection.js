@@ -25,7 +25,7 @@ export default function HeroSection() {
             </p>
             <Link
               href="#"
-              className="theme-dark-bg text-xl md:text-xl text-white px-4 py-2 rounded Lexend-Medium inline-block transition-colors"
+              className="bg-[#242344] text-xl md:text-xl text-white px-4 py-2 rounded Lexend-Medium inline-block transition-colors"
               onClick={() => trackEvent('click_sell_giftcard_banner', 'CTA Click', 'Sell Gift Card - Banner')}
             >
               Sell a Gift Card

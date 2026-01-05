@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 export default function ReadytoSellYourGiftSection() {
   return (
@@ -18,6 +19,7 @@ export default function ReadytoSellYourGiftSection() {
             <p className="text-xl mb-8 text-white/90">
               Install the Cardgoal app and experience the most rewarding gift card trades in Nigeria.
             </p>
+            
             <Link
               href="https://app.cardgoal.com/?name=/sell&id=102"
               className="theme-dark-bg text-white px-4 py-3 rounded font-semibold inline-block transition-colors"

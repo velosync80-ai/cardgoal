@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 export default function DownloadSection() {
   return (
@@ -15,15 +16,12 @@ export default function DownloadSection() {
             <p className="text-xl md:text-xl text-white/90 mb-10">
               Install the app today and enjoy your 300 Naira Welcome Bonus.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 pb-4">
-              <Link
-                href="https://app.cardgoal.com/?name=/sell&id=102"
-                className="theme-dark-bg text-white px-4 py-3 rounded font-semibold inline-block transition-colors"
-                onClick={() => trackEvent('click_get_started_bottom', 'CTA Click', 'Homepage - Bottom Banner')} >
-                Get Started
-              </Link>
-
-            </div>
+            <Link
+              href="https://app.cardgoal.com/?name=/sell&id=102"
+              className="theme-dark-bg text-white px-4 py-3 rounded font-semibold inline-block transition-colors"
+              onClick={() => trackEvent('click_get_started_bottom', 'CTA Click', 'Homepage - Bottom Banner')} >
+              Get Started
+            </Link>
           </div>
           <div className="hidden lg:block">
             <div className="w-full flex items-center justify-center">
